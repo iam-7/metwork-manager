@@ -1,11 +1,11 @@
 import smtplib
 
 def send_mail(host,ip):
-    gmail_user = 'guru.5798.r@gmail.com'  
-    gmail_password = 'Dominus@5'
+    gmail_user = 'mssd.group2@gmail.com'  
+    gmail_password = 'mz6ipfdXLwZqDGA'
 
     sent_from = gmail_user  
-    to = ['guru.5798.r@gmail.com']  
+    to = ['mssd.group2@gmail.com']  
     subject = 'note'
     body = """
     The following devices not reacheable

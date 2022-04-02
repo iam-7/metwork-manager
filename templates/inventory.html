@@ -164,21 +164,21 @@
                     <tr>
                         <td>
                             <div class="dropdown">
-                                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">{{item[1]}}
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">{{item[0]}}
                                 <span class="caret"></span></button>
                                 <ul class="dropdown-menu" >
                                   <form>
-                                  <button class="btn btn-default btn-block" type="submit" formaction="/backup" formmethod="POST" value="{{item[2]}}" name="ip">Backup</button>
-                                  <button class="btn btn-default btn-block" type="submit" formaction="/removedevice" formmethod="POST" value="{{item[2]}}" name="ip">Remove</button>
-                                  <button class="btn btn-default btn-block" type="submit" formaction="/showconfig" formmethod="POST" value="{{item[1]}}" name="host">Show config</button>
+                                  <button class="btn btn-default btn-block" type="submit" formaction="/backup" formmethod="POST" value="{{item[1]}}" name="ip">Backup</button>
+                                  <button class="btn btn-default btn-block" type="submit" formaction="/removedevice" formmethod="POST" value="{{item[1]}}" name="ip">Remove</button>
+                                  <button class="btn btn-default btn-block" type="submit" formaction="/showconfig" formmethod="POST" value="{{item[0]}}" name="host">Show config</button>
                                 </form>
                                 </ul>
                               </div>
                             </div>
 
                         </td>
+                        <td>{{item[1]}}</td>
                         <td>{{item[2]}}</td>
-                        <td>{{item[3]}}</td>
 
                         {% if status %}
                           <td>
